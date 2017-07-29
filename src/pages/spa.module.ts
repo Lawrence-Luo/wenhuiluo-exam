@@ -6,12 +6,19 @@ import { CommonModule } from '@angular/common';
 
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
+import { AddStudentModule } from './add-student/add-student.module';
+import { QueryStudentModule } from './query-student/query-student.module';
+import { EditStudentModule } from './edit-student/edit-student.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     HomeModule,
-    AboutModule
+    AboutModule,
+    AddStudentModule,
+    QueryStudentModule,
+    EditStudentModule
   ],
 })
 export class SPAModule { }
