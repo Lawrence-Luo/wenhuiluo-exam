@@ -20,18 +20,12 @@ export class HomePageComponent implements OnInit {
         this.students = this.studentService.students;
   };
 
-  edit(studentList, stdNo){
-    this.students = studentList;
+  edit(studentList){
+      this.studentService.student= studentList
 
-    for (var index = 0; index < this.students.length; index++) {
-      if (this.students[index].stdno == stdNo){
-        this.selectedStudent  = this.students[index];
-      }   
+      console.log(this.studentService.student);
     }
-    // console.log(stdNo)
-    // console.log(this.students)
-    // console.log(this.selectedStudent)
-  }
+  
 
   ngOnInit() {
   }

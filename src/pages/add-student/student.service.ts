@@ -35,6 +35,8 @@ export class StudentService{
          "exam3":84} 
       ]
 
+    student:any={};
+
     searchStudent(stdno){
         for (var index = 0; index < this.students.length; index++) {
             if (this.students[index].stdno == stdno)

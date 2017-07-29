@@ -21,7 +21,7 @@
       <td>{{student.exam1}}</td>
       <td>{{student.exam2}}</td>
       <td>{{student.exam3}}</td>
-      <td><a routerLink="edit/{{student.stdno}}">编辑</a></td>
+      <td><a routerLink="edit" (click) = "edit(student)">编辑</a></td>
     </tr>
   </tbody>
 </table>
